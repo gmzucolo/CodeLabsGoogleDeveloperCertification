@@ -1,10 +1,11 @@
-package com.example.codelabsgoogledevelopercertification
+package com.example.codelabsgoogledevelopercertification.core
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.example.codelabsgoogledevelopercertification.R
 import com.example.codelabsgoogledevelopercertification.databinding.FragmentToastSnakeBinding
 import com.example.codelabsgoogledevelopercertification.util.toast
 import com.google.android.material.snackbar.Snackbar
