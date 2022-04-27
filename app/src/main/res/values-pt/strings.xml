@@ -1,0 +1,7 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Olá fragmento vazio</string>
+    <string name="notify_me">Notifique me!</string>
+    <string name="update_me">Atualize me!</string>
+    <string name="cancel_me">Cancele me!</string>
+</resources>
