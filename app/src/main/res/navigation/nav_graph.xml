@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.core.MainFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -16,15 +16,36 @@
         <action
             android:id="@+id/action_mainFragment_to_notificationFragment"
             app:destination="@id/notificationFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_selectImageFragment"
+            app:destination="@id/selectImageFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.core.ToastSnakeFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.core.toast.ToastSnakeFragment"
         android:label="fragment_toast_snake"
         tools:layout="@layout/fragment_toast_snake" >
         <action
             android:id="@+id/action_toastSnakeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blurFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.workmanager.BlurFragment"
+        android:label="fragment_workmanager"
+        tools:layout="@layout/fragment_blur">
+        <action
+            android:id="@+id/action_blurFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectImageFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.workmanager.SelectImageFragment"
+        android:label="fragment_select_image"
+        tools:layout="@layout/fragment_select_image">
+        <action
+            android:id="@+id/action_selectImageFragment_to_blurFragment"
+            app:destination="@id/blurFragment" />
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"

@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.core
+package com.example.codelabsgoogledevelopercertification.core.toast
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle

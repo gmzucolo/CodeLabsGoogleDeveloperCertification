@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.core
+package com.example.codelabsgoogledevelopercertification
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

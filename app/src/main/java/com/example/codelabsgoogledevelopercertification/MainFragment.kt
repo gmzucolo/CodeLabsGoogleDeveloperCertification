@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.core
+package com.example.codelabsgoogledevelopercertification
 
 import android.os.Bundle
 import android.view.View
@@ -17,5 +17,6 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
 
         binding.codelabToastSnake.setOnClickListener { navTo(R.id.toastSnakeFragment) }
         binding.codelabNotification.setOnClickListener { navTo(R.id.notificationFragment) }
+        binding.codelabWorkManager.setOnClickListener { navTo(R.id.selectImageFragment) }
     }
 }
