@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.workmanager
+package com.example.codelabsgoogledevelopercertification.codelab.core.workmanager
 
 import android.Manifest
 import android.net.Uri
@@ -11,7 +11,7 @@ import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import com.example.codelabsgoogledevelopercertification.R
 import com.example.codelabsgoogledevelopercertification.databinding.FragmentSelectImageBinding
-import com.example.codelabsgoogledevelopercertification.util.navTo
+import com.example.codelabsgoogledevelopercertification.codelab.util.navTo
 
 class SelectImageFragment : Fragment(R.layout.fragment_select_image) {
 

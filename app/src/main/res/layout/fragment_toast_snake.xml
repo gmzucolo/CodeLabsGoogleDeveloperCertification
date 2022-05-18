@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/coordinate_root"
-    tools:context=".core.toast.ToastSnakeFragment">
+    tools:context=".codelab.core.toast.ToastSnakeFragment">
 
     <ImageView
         android:id="@+id/toast"

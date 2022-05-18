@@ -1,8 +1,6 @@
-package com.example.codelabsgoogledevelopercertification.workmanager
+package com.example.codelabsgoogledevelopercertification.codelab.core.workmanager
 
 import android.content.Context
-import android.graphics.BitmapFactory
-import android.graphics.ImageDecoder
 import android.net.Uri
 import android.os.Build
 import android.provider.MediaStore

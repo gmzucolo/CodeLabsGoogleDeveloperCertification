@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.workmanager
+package com.example.codelabsgoogledevelopercertification.codelab.core.workmanager
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

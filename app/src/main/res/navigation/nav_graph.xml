@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.MainFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
@@ -19,10 +19,13 @@
         <action
             android:id="@+id/action_mainFragment_to_selectImageFragment"
             app:destination="@id/selectImageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_materialComponentsFragment"
+            app:destination="@id/materialComponentsFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.core.toast.ToastSnakeFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.toast.ToastSnakeFragment"
         android:label="fragment_toast_snake"
         tools:layout="@layout/fragment_toast_snake" >
         <action
@@ -31,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/blurFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.workmanager.BlurFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.workmanager.BlurFragment"
         android:label="fragment_workmanager"
         tools:layout="@layout/fragment_blur">
         <action
@@ -40,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectImageFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.workmanager.SelectImageFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.workmanager.SelectImageFragment"
         android:label="fragment_select_image"
         tools:layout="@layout/fragment_select_image">
         <action
@@ -49,11 +52,32 @@
     </fragment>
     <fragment
         android:id="@+id/notificationFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.core.notification.NotificationFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.notification.NotificationFragment"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" >
         <action
             android:id="@+id/action_notificationFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialComponentsFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.materialcomponents.MaterialComponentsFragment"
+        android:label="fragment_material_components"
+        tools:layout="@layout/fragment_material_components">
+        <action
+            android:id="@+id/action_materialComponentsFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_materialComponentsFragment_to_productGridFragment"
+            app:destination="@id/productGridFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productGridFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.materialcomponents.ProductGridFragment"
+        android:label="fragment_product_grid"
+        tools:layout="@layout/fragment_product_grid">
+        <action
+            android:id="@+id/action_productGridFragment_to_materialComponentsFragment"
+            app:destination="@id/materialComponentsFragment" />
     </fragment>
 </navigation>

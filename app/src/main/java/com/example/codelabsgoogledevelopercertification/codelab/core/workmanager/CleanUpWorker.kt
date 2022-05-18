@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.workmanager
+package com.example.codelabsgoogledevelopercertification.codelab.core.workmanager
 
 import android.content.Context
 import androidx.work.Worker

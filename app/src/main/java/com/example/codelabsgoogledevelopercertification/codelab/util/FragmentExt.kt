@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.util
+package com.example.codelabsgoogledevelopercertification.codelab.util
 
 import android.os.Bundle
 import android.widget.Toast
