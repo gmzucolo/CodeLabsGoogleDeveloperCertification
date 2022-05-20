@@ -9,7 +9,7 @@
         android:id="@+id/mainFragment"
         android:name="com.example.codelabsgoogledevelopercertification.codelab.MainFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_toastSnakeFragment"
             app:destination="@id/toastSnakeFragment" />
@@ -22,12 +22,15 @@
         <action
             android:id="@+id/action_mainFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
+        <action
+            android:id="@+id/action_mainFragnebt_to_interactiveUiFragment"
+            app:destination="@id/interactiveUiFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
         android:name="com.example.codelabsgoogledevelopercertification.codelab.core.toast.ToastSnakeFragment"
         android:label="fragment_toast_snake"
-        tools:layout="@layout/fragment_toast_snake" >
+        tools:layout="@layout/fragment_toast_snake">
         <action
             android:id="@+id/action_toastSnakeFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -54,7 +57,7 @@
         android:id="@+id/notificationFragment"
         android:name="com.example.codelabsgoogledevelopercertification.codelab.core.notification.NotificationFragment"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" >
+        tools:layout="@layout/fragment_notification">
         <action
             android:id="@+id/action_notificationFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
@@ -79,5 +82,14 @@
         <action
             android:id="@+id/action_productGridFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interactiveUiFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.InteractiveUiFragment"
+        android:label="fragment_interactive_ui"
+        tools:layout="@layout/fragment_interactive_ui">
+        <action
+            android:id="@+id/action_interactiveUiFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
