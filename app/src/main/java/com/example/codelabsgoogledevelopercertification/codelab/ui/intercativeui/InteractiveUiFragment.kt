@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.codelab.core.ui
+package com.example.codelabsgoogledevelopercertification.codelab.ui.intercativeui
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle

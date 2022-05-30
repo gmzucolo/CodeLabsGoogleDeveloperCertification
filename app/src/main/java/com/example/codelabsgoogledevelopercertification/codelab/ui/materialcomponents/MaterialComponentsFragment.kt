@@ -1,4 +1,4 @@
-package com.example.codelabsgoogledevelopercertification.codelab.core.ui.materialcomponents
+package com.example.codelabsgoogledevelopercertification.codelab.ui.materialcomponents
 
 import android.os.Bundle
 
