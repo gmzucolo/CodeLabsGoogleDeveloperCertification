@@ -23,11 +23,14 @@
             android:id="@+id/action_mainFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_interactiveUiFragment"
+            android:id="@+id/action_mainFragnebt_to_interactiveUiFragment"
             app:destination="@id/interactiveUiFragment" />
         <action
             android:id="@+id/action_mainFragment_to_recyclerViewFragment"
             app:destination="@id/recyclerViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sendFragment"
+            app:destination="@+id/sendFragment" />
     </fragment>
     <fragment
         android:id="@+id/toastSnakeFragment"
@@ -93,15 +96,6 @@
         tools:layout="@layout/fragment_interactive_ui">
         <action
             android:id="@+id/action_interactiveUiFragment_to_mainFragment"
-            app:destination="@id/mainFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/recyclerViewFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.recyclerview.RecyclerViewFragment"
-        android:label="fragment_recycler_view"
-        tools:layout="@layout/fragment_recycler_view">
-        <action
-            android:id="@+id/action_recyclerViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>
