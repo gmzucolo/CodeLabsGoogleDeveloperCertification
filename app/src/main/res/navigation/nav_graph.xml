@@ -23,7 +23,7 @@
             android:id="@+id/action_mainFragment_to_materialComponentsFragment"
             app:destination="@id/materialComponentsFragment" />
         <action
-            android:id="@+id/action_mainFragnebt_to_interactiveUiFragment"
+            android:id="@+id/action_mainFragment_to_interactiveUiFragment"
             app:destination="@id/interactiveUiFragment" />
         <action
             android:id="@+id/action_mainFragment_to_recyclerViewFragment"
@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/materialComponentsFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.materialcomponents.MaterialComponentsFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.ui.materialcomponents.MaterialComponentsFragment"
         android:label="fragment_material_components"
         tools:layout="@layout/fragment_material_components">
         <action
@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/productGridFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.materialcomponents.ProductGridFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.ui.materialcomponents.ProductGridFragment"
         android:label="fragment_product_grid"
         tools:layout="@layout/fragment_product_grid">
         <action
@@ -91,11 +91,49 @@
     </fragment>
     <fragment
         android:id="@+id/interactiveUiFragment"
-        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.InteractiveUiFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.ui.intercativeui.InteractiveUiFragment"
         android:label="fragment_interactive_ui"
         tools:layout="@layout/fragment_interactive_ui">
         <action
             android:id="@+id/action_interactiveUiFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sendFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.ui.activityintents.SendFragment"
+        android:label="fragment_activity_intents"
+        tools:layout="@layout/fragment_send">
+        <action
+            android:id="@+id/action_sendFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/replyFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_sendFragment_to_replyFragment"
+            app:destination="@id/replyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/replyFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.ui.activityintents.ReplyFragment"
+        android:label="fragment_reply"
+        tools:layout="@layout/fragment_reply">
+        <action
+            android:id="@+id/action_replyFragment_to_sendFragment"
+            app:destination="@id/sendFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/sendFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.example.codelabsgoogledevelopercertification.codelab.core.ui.recyclerview.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view">
+        <action
+            android:id="@+id/action_recyclerViewFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
     </fragment>
 </navigation>

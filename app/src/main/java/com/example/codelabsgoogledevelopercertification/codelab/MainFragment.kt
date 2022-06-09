@@ -21,6 +21,6 @@ class MainFragment : androidx.fragment.app.Fragment(R.layout.fragment_main) {
         binding.codelabMaterialComponents.setOnClickListener { navTo(R.id.materialComponentsFragment) }
         binding.codelabInteractiveUi.setOnClickListener { navTo(R.id.interactiveUiFragment) }
         binding.codelabActivitiesIntents.setOnClickListener { navTo(R.id.sendFragment) }
-        binding.codelabRecyclerview.setOnClickListener { navTo(R.id.codelab_recyclerview) }
+        binding.codelabRecyclerview.setOnClickListener { navTo(R.id.recyclerViewFragment) }
     }
 }
